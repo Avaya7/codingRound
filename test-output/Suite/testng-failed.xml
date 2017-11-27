@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="Browser" value="chrome"/>
+  <test name="Test(failed)" parallel="tests">
+    <classes>
+      <class name="driver">
+        <methods>
+          <include name="CloseSetUP"/>
+          <include name="setDriverPath"/>
+          <include name="Signin"/>
+        </methods>
+      </class> <!-- driver -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
